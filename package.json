@@ -1,0 +1,14 @@
+{
+  "name": "sportz-interactive-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "sass --watch style/index.scss style/index.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.77.1"
+  }
+}
