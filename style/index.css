@@ -225,9 +225,13 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 960px) {
   #match_summary #team_scores .team .score_list .score {
     font-size: 20px;
+    align-items: center;
   }
   #match_summary #team_scores .team .score_list .score:first-child {
     font-size: 28px;
+  }
+  #match_summary #team_scores .team .score_list .score span {
+    font-size: 12px;
   }
 }
 #match_summary #team_scores .team.t1 .score:last-child {
@@ -241,9 +245,13 @@ h1, h2, h3, h4, h5, h6 {
     border-width: 3.2px;
   }
 }
+@media (max-width: 959.98px) {
+  #match_summary #team_scores .team.t2 .score {
+    justify-content: flex-end;
+  }
+}
 @media (min-width: 960px) {
   #match_summary #team_scores .team.t2 .score {
-    align-items: center;
     flex-direction: row-reverse;
   }
 }
@@ -455,6 +463,7 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: cover;
   border-radius: 5px;
   overflow: hidden;
+  object-position: top;
 }
 #latest_updates #update_items .news_item .img-banner:before {
   content: "";
